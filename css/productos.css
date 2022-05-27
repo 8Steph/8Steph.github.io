@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box; /* siempre mantiene el tamaño, se suma adentro el padding*/         
+    box-sizing: border-box; /* siempre mantiene el tamaño, se suma adentro el padding*/   
+    overflow: scroll;      
 }
 
 .container-productos {
