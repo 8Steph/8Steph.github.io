@@ -1,9 +1,10 @@
 * {
-    box-sizing: border-box; /* siempre mantiene el tamaño, se suma adentro el padding*/
-    
-    
+    box-sizing: border-box; /* siempre mantiene el tamaño, se suma adentro el padding*/         
 }
 
+.html {
+    overflow-x: hidden;
+}
 .degrade {
     background:linear-gradient(to right, rgb(150, 205, 179),#b7b9b7, #b8b9b8, #8d8e8e,#797a7a,#646565 );
   }
@@ -11,7 +12,9 @@
 body {
     margin: 0;
     font-family: 'Roboto Mono', monospace;
-    font-size:20px ;        
+    font-size:20px ; 
+    
+          
 }
 
 img {

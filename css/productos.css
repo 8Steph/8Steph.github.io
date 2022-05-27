@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box; /* siempre mantiene el tamaño, se suma adentro el padding*/         
+}
+
 .container-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* dos columnas y cada una ocupa el mismo tamaño con 1fr*/
@@ -5,6 +9,7 @@
     background: rgb(214, 212, 212) ;
     border-radius: 20px;
     font-family: 'Roboto Mono', monospace;
+    overflow-y: hidden;
     
 }
 
