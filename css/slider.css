@@ -1,0 +1,144 @@
+ /* * {
+    box-sizing: border-box;
+} */
+
+/* body {
+    display: flex;
+    min-height: 100vh;
+    background: #EFC076;
+}  */
+
+.container-slider{
+    margin: 50px 0;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.slider {
+    display: flex;
+    width: 400%; /* Se coloca 100 por cada imagen*/
+    height: 300px;
+    margin-left: -100%;
+    position: relative; /*para oscurecer el slider*/
+    
+}
+
+/*Oscurecer el slider*/
+
+.slider:before{ /* Before y after crear seudoelemntos, a partir de un elemento se crea otro*/
+    content: "";
+    position: absolute; /*va con el relative de .slider*/
+    top:0;
+    left: 0;
+    width: 100%;
+    background: rgba(57, 58, 58, 0.5);
+    height: 100%;
+    z-index: 1; /*posiciona los elementos en el eje z*/
+
+}
+
+
+.slider__section {
+    width: 100%;
+    position: relative;
+}
+
+.slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+   
+}
+
+.slider__btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgb(93, 196, 196, 0);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;    
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999; /*para que cuando se oscurezca el slider no se oscurezcan los botones*/
+}
+
+.slider__btn:hover {
+    background: rgb(226, 222, 222, 0.5);
+}
+
+.slider__btn--left {
+    left: 10px;
+}
+
+.slider__btn--right { 
+    right: 10px;
+}
+
+
+
+/* Contenido del slider letras: comprar y frase*/
+
+.slider__content{
+    position: absolute; /*se toma en base al .slider__section al cual se le puso relative */
+    top: 50%;
+    left: 50%;
+    color: #FFFF;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 999; /*para que cuando se oscurezca el slider no se oscurezcan las letras*/
+}
+
+/* boton comprar*/
+
+.slider__btn__Comprar{
+    display: block;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px auto;
+    transition: 0.6s;
+}  
+
+.slider__btn__Comprar:hover {
+    background: rgba(47, 175, 154, 0.5);
+    
+}
+
+/*Tamaño titulo para chicas y chicos*/
+
+.slider__title{
+    font-size: 2.2em;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Tamaño titulo arma tu look*/
+.slider__txt{
+    text-align: center;
+    margin: 5px 0;
+}
+
+/* Estilos para tablet */
+@media  screen and (min-width:600px) {
+    .slider {
+        height: 400px;
+        
+        
+    }
+
+    .slider__img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+     
+}  
+

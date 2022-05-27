@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registración</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="degrade__formulario">    
+    <main>
+        <form action="#" class="formulario" id="formulario">  
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label class="formulario__label">Usuario</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="usuario" id="usuario">                
+                </div>          
+            </div>
+
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label class="formulario__label">Nombre y Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre">                
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password">
+                <label class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">                
+                </div>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__password2">
+                <label class="formulario__label">Repetir la contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2">                
+                </div>
+            </div>
+
+
+            <div class="formulario__grupo" id="grupo__correo">
+                <label class="formulario__label">Correo Electonico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo">                
+                </div>
+            </div>
+
+
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label class="formulario__label">Teléfono</label>
+                <div class="formulario__grupo-input">
+                    <input type="telefono" class="formulario__input" name="telefono" id="telefono">                
+                </div>
+            </div>
+
+
+            <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    <b class="formulario__span">Acepto los terminos y condiciones</b>
+                </label>
+            </div>
+
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">            
+                <input class="formulario__btn" type="submit" value="Enviar">
+            </div>                
+        </form>
+        
+        <div class="registro">             
+            <a href="index.html"><img src="img/fondo_registro.png" alt="POPS!" class="imagen__registro" title="Inicio" target="_blank"></a>          
+        </div>     
+    </main>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
