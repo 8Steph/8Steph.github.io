@@ -2,10 +2,7 @@
     box-sizing: border-box; /* siempre mantiene el tamaño, se suma adentro el padding*/         
 }
 
-html, body {
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-}
+
 .degrade {
     background:linear-gradient(to right, rgb(150, 205, 179),#b7b9b7, #b8b9b8, #8d8e8e,#797a7a,#646565 );
   }
