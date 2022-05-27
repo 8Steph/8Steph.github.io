@@ -104,24 +104,30 @@
 
 
 .slider__title{
-    font-size: 15px;
+    font-size: 20px;
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
+    font-weight:200;
 }
 
 
 .slider__txt{
     text-align: center;
     margin: 5px 0;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 /* Estilos para tablet */
 @media  screen and (min-width:600px) {
     .slider {
-        height: 400px;
+        height: 400px;       
         
-        
+    }
+
+    .slider__title{
+        font-size: 25px;
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
     }
 
     .slider__img {

@@ -27,8 +27,8 @@
 
 
 .imagen__registro {
-    width: 40%;
-    padding-left: 30%;  
+    width: 60%;
+    padding-left: 20%;
 
 }
 
@@ -60,14 +60,15 @@
 
 
 .formulario__span {
-    font-size: 16px;    
+    font-size: 16px;
+    margin-left: -8px;
 }
 
 .formulario__checkbox{
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 10px;
+    
 }
 
 .formulario__grupo-terminos {
@@ -83,6 +84,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right:30px;
 }
 
 .formulario__btn {
@@ -92,7 +94,7 @@
     border: none;
     border-radius: 100px;
     cursor: pointer;
-    width: 30% !important;
+    width: 40% !important;
 }
 
 .formulario__btn:hover {
