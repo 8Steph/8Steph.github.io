@@ -1,8 +1,12 @@
 * {
     box-sizing: border-box; /* siempre mantiene el tamaño, se suma adentro el padding*/   
-    overflow: scroll;      
+         
 }
 
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
 .container-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* dos columnas y cada una ocupa el mismo tamaño con 1fr*/
